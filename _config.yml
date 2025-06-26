@@ -101,6 +101,10 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
 
 collections:
   pages:

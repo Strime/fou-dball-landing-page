@@ -1,19 +1,50 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 // Layout and grids
-$content-width: 1170px;
+$content-width: 1200px;
 
 // Fonts and sizes
-$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$primary-text-color: #000000;
+$font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$primary-text-color: #333333;
+
+// Color System
+$primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$secondary-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+$footer-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+
+// Spacing System
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 4rem;
+
+// Border Radius
+$border-radius-sm: 8px;
+$border-radius-md: 12px;
+$border-radius-lg: 20px;
+$border-radius-xl: 25px;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
 
 html {
 	font-size: 62.5%;
 	font-family: $font;
-	line-height: 1;
+	line-height: 1.6;
+	scroll-behavior: smooth;
 }
 
 body {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	background-color: $body-color;
+	color: $primary-text-color;
+	min-height: 100vh;
 }
 
 .subPageBody {
@@ -21,15 +52,24 @@ body {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 3.5rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	line-height: 1.1;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	line-height: 1.2;
 }
 
 h3 {
-    font-size: 2rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+	line-height: 1.3;
 }
 
 // Better font rendering
@@ -48,9 +88,7 @@ a:active {
 }
 
 // Shadows
-$drop-shadow: 	drop-shadow(0px 5px 10px rgba(#000, 0.1)) 
-				drop-shadow(0px 1px 1px rgba(#000, 0.2)
-				);
+$drop-shadow: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
 
 // Various resets
 *,
