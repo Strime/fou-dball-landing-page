@@ -1,3 +1,14 @@
+> [!WARNING]
+> **Dépôt déprécié — GitHub Pages à ne plus utiliser.**
+>
+> La landing page de Fou d'Ball vit désormais dans le monorepo, sous
+> `apps/web-site`, et est publiée sur <https://foudball.fr> via Firebase Hosting
+> (projet `foot-d-ball`). Ce thème Jekyll n'est plus la source du site.
+>
+> Déprécié le 25 août 2026.
+
+---
+
 # Automatic App Landing Page
 **Create and deploy an iOS app landing page on GitHub Pages in only five minutes.**
 
